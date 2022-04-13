@@ -1,38 +1,126 @@
+:root {
+  --orange: rgb(245, 90, 90);
+  --white: rgb(255, 255, 255);
+  --gray: rgb(170, 170, 170);
+  --gray-light: rgb(225, 225, 225);
+
+  --bg: var(--white);
+
+  --txt: rgb(0, 0, 0);
+  --txt-2: var(--gray);
+}
+
+body {
+  font-size: 14px;
+  color: var(--txt);
+
+  background-color: var(--bg);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* Utilities */
+section {
+  max-width: 600px;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: var(--txt-2);
+}
+
+.fa-location-dot {
+  color: var(--orange);
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 50px;
+  padding: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  color: var(--white);
+  background-color: var(--orange);
+}
+.header-space {
+  display: block;
+  height: 50px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  min-width: 125px;
+  max-width: 150px;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+}
+img {
+  width: 100%;
+}
+
+.card {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.card:not(:last-child) {
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.country-container {
+  display: flex;
+  align-items: center;
+}
+.country {
+  margin-left: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+.g-maps {
+  margin-left: 15px;
+}
+
+.location {
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+.dates {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.description {
+  margin-top: 5px;
+  line-height: 1.25;
+  font-weight: 300;
 }
