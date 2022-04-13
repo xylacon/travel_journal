@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/xylacon/travel_journal/static/css/main.7dd6bd2b.css",
-    "main.js": "/xylacon/travel_journal/static/js/main.3594ff41.js",
+    "main.js": "/xylacon/travel_journal/static/js/main.7c62cbb1.js",
     "index.html": "/xylacon/travel_journal/index.html",
     "main.7dd6bd2b.css.map": "/xylacon/travel_journal/static/css/main.7dd6bd2b.css.map",
-    "main.3594ff41.js.map": "/xylacon/travel_journal/static/js/main.3594ff41.js.map"
+    "main.7c62cbb1.js.map": "/xylacon/travel_journal/static/js/main.7c62cbb1.js.map"
   },
   "entrypoints": [
     "static/css/main.7dd6bd2b.css",
-    "static/js/main.3594ff41.js"
+    "static/js/main.7c62cbb1.js"
   ]
 }
